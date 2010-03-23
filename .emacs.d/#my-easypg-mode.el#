@@ -1,0 +1,10 @@
+(provide 'my-easypg-mode)
+
+;; EasyPG
+;; http://emacs.wordpress.com/2008/07/18/keeping-your-secrets-secret/
+;(add-to-list 'load-path "path/to/epg")
+;(add-to-list 'load-path "~/.emacs.d/lisp/epg-0.0.16/Linux")
+(add-to-list 'load-path "~/.emacs.d/lisp/epg-0.0.16/Darwin")
+(require 'epa-setup)
+(epa-file-enable)
+(setq epg-gpg-program "/opt/local/bin/gpg")
